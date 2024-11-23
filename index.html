@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DeliveryApp</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="shortcut icon" href="https://img.icons8.com/color-pixels/64/delivery.png">
+</head>
+<body>
+    <header>
+        <h1>DeliveryApp</h1>
+    </header>
+    <main>
+        <div class="cajaDatosPedido">
+            <div>
+                <h2>Nombre</h2>
+                <input type="text" id="input-nombre">
+            </div>
+            <div>
+                <h2>Dirección</h2>
+                <input type="text" id="input-direccion">
+            </div>
+            <div>
+                <h2>Combo</h2>
+                <select id="menu-platos">
+                    <option value="burger">Burger</option>
+                    <option value="pizza">Pizza</option>
+                    <option value="hotdog">Hot Dog</option>
+                </select>
+            </div>
+            <div>
+                <h2>Tipo</h2>
+                <select id="menu-tipo-combo">
+                    <option value="150">Mediano</option>
+                    <option value="200">Grande</option>
+                </select>
+            </div>
+            <div>
+                <h2>Cantidad</h2>
+                <input type="number" id="input-cantidad" min="1">
+            </div>
+            <div>
+                <h2>Medio de pago</h2>
+                <select id="medio-de-pago">
+                    <option value="efectivo">Efectivo</option>
+                    <option value="debito">Tarjeta de debito</option>
+                    <option value="credito">Tarjeta de crédito</option>
+                </select>
+            </div>
+            <div>
+                <h2>Ingresa el código de tu cupón de descuento</h2>
+                <input type="text" id="input-cupon">
+            </div>
+            <div>
+                <button onclick="realizarPedido()">¡Pedir!</button>
+            </div>
+        </div>
+        <div class="cajaEstadoPedido"> 
+            <p id="parrafo-estado-pedido">Ingresa los datos de tu pedido y haz click en ¡Pedir!</p>
+            <img id="imagen-estado-pedido" src="https://img.icons8.com/color-pixels/64/delivery.png">
+        </div>
+    </main>
+    <footer>
+        <p>Hecho por: Gabriel Ledesma</p>
+        <button id="no-tocar" onclick="mostrarDescuento()">NO TOCAR</button>
+    </footer>
+<script src="index.js"></script>
+</body>
+</html>
